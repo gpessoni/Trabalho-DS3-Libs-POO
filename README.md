@@ -81,19 +81,25 @@ Abaixo estão as rotas disponíveis para interagir com a API:
 *   **PUT /books/:id**: Atualiza as informações de um livro específico.
     
 *   **DELETE /books/:id**: Exclui um livro específico.
-    
+
+
 
 ### **Empréstimos**
 
 *   **GET /loan**: Retorna a lista de todos os empréstimos.
     
 *   **GET /loan/:id**: Retorna um empréstimo específico pelo ID.
+
+*   **GET /loans/available-books**: Retorna os livros disponíveis para empréstimo
+
+*   **GET /loans/borrowed-books**: Retorna os livros que estão emprestados
     
 *   jsonCopiarEditar{ "bookId": 1, "userId": 2}
     
-*   **PUT /loan/:id**: Atualiza as informações de um empréstimo específico.
+*   **POST /loans/**: Cria um empréstimo de livro
     
-*   **DELETE /loan/:id**: Exclui um empréstimo específico.
+*   **POST /loans/return/:id**: Realiza a devolução de um livro
+
     
 
 Como Funciona
