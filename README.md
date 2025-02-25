@@ -108,6 +108,13 @@ Como Funciona
 *   **Empréstimos**: O sistema permite que os livros sejam emprestados para os usuários. Quando um empréstimo é feito, o número de cópias disponíveis do livro é decrementado, e quando o livro é devolvido, a cópia é restaurada.
     
 
+Documentação
+-------------
+
+Você pode estar acessando a documentação através desse link:
+
+[Documentação da API](https://documenter.getpostman.com/view/41703113/2sAYdeMC7T)
+
 Contribuição
 ------------
 
