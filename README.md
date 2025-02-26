@@ -35,12 +35,17 @@ src/
 Instalação
 ----------
 
-1.  bashCopiarEditargit clone
+1.  git clone
     
-2.  bashCopiarEditarnpm install
+2.  npm install
     
-3.  bashCopiarEditarnpm start
-    
+3.  npm run dev
+
+4. Crie um .env no projeto com uma conexão de sting para o banco local: 
+Exemplo: DATABASE_URL="postgresql://postgres:postgres@localhost:5432/books"
+
+Se quiser, pode-se criar um container docker rodando o banco de dados: docker run -e DATABASE_URL="postgresql://postgres:postgres@localhost:5432/quadraz" -p 3000:3000 --name my-container-name your-image-name
+
 
 O servidor estará disponível em http://localhost:3000.
 
@@ -63,7 +68,9 @@ Abaixo estão as rotas disponíveis para interagir com a API:
     
 *   **GET /authors/:id**: Retorna um autor específico pelo ID.
     
-*   jsonCopiarEditar{ "name": "J.R.R. Tolkien", "bio": "Escritor britânico", "nationality": "British", "birthDate": "1892-01-03"}
+  ```js
+{ "name": "J.R.R. Tolkien", "bio": "Escritor britânico", "nationality": "British", "birthDate": "1892-01-03"}
+```
     
 *   **PUT /authors/:id**: Atualiza as informações de um autor específico.
     
