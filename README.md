@@ -41,11 +41,6 @@ Instalação
     
 3.  npm run dev
 
-4. Crie um .env no projeto com uma conexão de sting para o banco local: 
-Exemplo: DATABASE_URL="postgresql://postgres:postgres@localhost:5432/books"
-
-Se quiser, pode-se criar um container docker rodando o banco de dados: docker run -e DATABASE_URL="postgresql://postgres:postgres@localhost:5432/quadraz" -p 3000:3000 --name my-container-name your-image-name
-
 
 O servidor estará disponível em http://localhost:3000.
 
