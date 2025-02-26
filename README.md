@@ -78,7 +78,7 @@ Abaixo estão as rotas disponíveis para interagir com a API:
     
 *   **GET /books/:id**: Retorna um livro específico pelo ID.
     
-*    ```js
+ ```js
 { "title": "O Senhor dos Anéis", "authorId": 1, "isbn": "978-0-261-10221-7", "publishDate": "1954-07-29", "availableCopies": 5}
 ```
     
