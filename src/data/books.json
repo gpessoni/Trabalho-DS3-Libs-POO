@@ -2,6 +2,15 @@
   {
     "id": 1,
     "title": "O Senhor dos Anéis",
+    "isbn": "3279238",
+    "authorId": 1,
+    "publicationYear": 1954,
+    "genre": "SCI-FI"
+  },
+  {
+    "id": 2,
+    "title": "O Senhor dos Anéis",
+    "isbn": "978-0-261-10221-7",
     "authorId": 1,
     "publicationYear": 1954,
     "genre": "SCI-FI"

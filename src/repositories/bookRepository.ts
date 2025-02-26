@@ -17,7 +17,7 @@ export class BookRepository {
             const data = fs.readFileSync(this.bookPath, 'utf8');
             return JSON.parse(data).map(
                 (book: Omit<Book, 'validate'>) =>
-                    new Book(book.id, book.title, book.authorId, book.publicationYear, book.genre)
+                    new Book(book.id, book.title, book.isbn, book.authorId, book.publicationYear, book.genre)
             );
         } catch (err: unknown) {
             if (err instanceof Error) {
@@ -68,6 +68,7 @@ export class BookRepository {
         const newBook = new Book(
             maxId + 1,
             book.title,
+            book.isbn,
             book.authorId,
             book.publicationYear,
             book.genre
@@ -99,6 +100,7 @@ export class BookRepository {
         books[bookIndex] = new Book(
             id,
             updatedBook.title,
+            updatedBook.isbn,
             updatedBook.authorId,
             updatedBook.publicationYear,
             updatedBook.genre
